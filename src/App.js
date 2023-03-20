@@ -1,7 +1,5 @@
 import React from "react";
 
-import "./App.css";
-import { Navbar, Brand, CTA } from "./components";
 import {
   Footer,
   Blog,
@@ -10,22 +8,24 @@ import {
   WhatGPT3,
   Header,
 } from "./containers";
+import { CTA, Brand, Navbar } from "./components";
 
-const App = () => {
-  return (
-    <div className="App">
-      <div className="gradient__bg">
-        <Navbar />
-        <Header />
-      </div>
+import "./App.css";
+
+const App = () => (
+  <div className="App">
+    <div className="gradient__bg">
+      <Navbar />
       <Header />
-      <WhatGPT3 />
-      <Features />
-      <Possibility />
-      <Blog />
-      <Footer />
     </div>
-  );
-};
+    <Brand />
+    <WhatGPT3 />
+    <Features />
+    <Possibility />
+    <CTA />
+    <Blog />
+    <Footer />
+  </div>
+);
 
 export default App;
